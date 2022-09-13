@@ -7,9 +7,7 @@
 2. Purpose of the software?
 - The purpose of this program is to understand how python prints to the screen. This is the beginning of my pthon learning and it is typical for it to be a Hello_World program.
 
-{Provide a link to your YouTube demonstration.  It should be a one minute demo of the software running and a walkthrough of the code.}
-
-[Python_hello_world_demo](http://youtube.link.goes.here)
+[Python_hello_world_demo](https://youtu.be/WGyFatoBgDc)
 
 # Development Environment
 
