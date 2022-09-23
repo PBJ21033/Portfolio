@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href = "home.css">
+</head>
+
+<header>
+    <%- include('partials/header.ejs'); %>
+</header>
+
+<body>
+    <h1>All Books</h1>
+    <table>
+        <tr>
+            <th>Book Name</th>
+            <th>Book Author</th>
+            <th>Book Pages</th>
+            <th>Book Price</th>
+            <th>Book Availability</th>
+            <th>Issue</th>
+            <th>Return</th>
+            <th>Delete</th>
+        </tr>
+        <% data.forEach(element=> { %>
+            <tr>
+                <td>
+                    <%= element.Book %>
+                </td>
+                <td>
+                    <%= element.Author %>
+                </td>
+                <td>
+                    <%= element.numPages %>
+                </td>
+                <td>
+                    <%= element.price %>
+                </td>
+                <td>
+                    <%= element.Status %>
+                </td>
+                <td>
+                   <form action = "/issue" method = "post">
+                        <input type = "text" style = "display: none;" name = "Book"
+                            value = "<%= element.Book  %>" >
+                        <button type = "submit">Issue</button>
+                   </form>
+                </td>
+                <td>
+                    <form action = "/return" method ="post">
+                        <input type = "text" style = "display: none;" name = "Book"
+                            value = "<%= element.Book %>" >
+                        <button type = "submit">Return</button>
+                    </form>
+                </td>
+                <td>
+                    <form action ="/delete" method = "post">
+                        <input type = "text" style = "display: none;" name = "Book"
+                            value = "<%= element.Book %>" >
+                        <button type = "submit">Delete</button>
+
+                    </form>
+
+                </td>
+            </tr>
+            <% }) %>
+  
+    </table>
+    
+  
+</body>
+  
+</html>

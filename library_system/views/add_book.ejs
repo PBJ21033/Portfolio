@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "home.css">
+    <title>Libaray App - Adding a book</title>
+</head>
+
+<header>
+    <%- include('partials/header.ejs'); %>
+</header>
+
+<body>
+    <h1>Add a Book</h1>
+
+    <!-- Gets the code from app.js to add a book. -->
+    <form action ="/" method = "post">
+        <input type = "text" placeholder= "Book Name" name= "Book">
+        <input type = "text" placeholder= "Name of Author" name= "Author">
+        <input type = "text" placeholder= "Number of Pages" name= "numPages">
+        <input type = "text" placeholder= "Book's price" name= "price">
+        <input type = "text" placeholder= "(Available or Not Available)" name= "Status">
+        <button type = "submit">Add</button>
+    </form>
+</body>
+</html>
