@@ -44,6 +44,7 @@ app.post("/", function(req, res){
     const inputPrice = req.body.price
     const inputStatus = req.body.Status
 
+    // This will add the new book objects.
     books.push({
         Book: inputBook,
         Author: inputAuthor,
@@ -55,10 +56,11 @@ app.post("/", function(req, res){
     res.render("home", {data: books})
 })
 
+// This issues the book when the button is pressed. 
 app.post("/issue", function(req, res){
     var issueBookName = req.body.Book
 
-
+    // Loops through the books to find which book the button indicated.
     books.forEach(book =>{
         if(book.Book == issueBookName){
             book.Status = "Issued"
@@ -68,9 +70,12 @@ app.post("/issue", function(req, res){
     res.render("home", {data: books})
 })
 
+// This will return the book that the button is associated with. 
 app.post("/return", function(req, res){
     const returnBookName = req.body.Book
 
+    // Loops through all the book objects to find the book associated with the button press.
+    // Also it updates the status of the book. 
     books.forEach(book =>{
         if(book.Book == returnBookName){
             book.Status = "Available"
@@ -85,6 +90,7 @@ app.post("/delete", function(req, res){
     const deleteBookName = req.body.Book
     var index = 0
 
+    // Loops through the book objects to find the book associated with the delete button press. 
     books.forEach(book =>{
         index += 1
         if(book.Book == deleteBookName){
