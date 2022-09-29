@@ -3,19 +3,18 @@ This web app allows a user to add, delete, issue, and return library books. This
 
 This software was created so that I could learn how to use node.js and express.js to create a web app. I have also been interested on what might go into developing a web app for a library. 
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/Rw6OWbWvVwk)
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+The first page of this app displays all of the books, their availabilties, authors, number of pages, and it allows for adding books by moving to the next page. Once you are on the second page, you are then able to add a book to the app. You add the book title, Author, number of pages, price (for book keeping), and it's availibility. The dynamic part is after you add the book, it renders the home page with the new book. From there you are able to repeat the process, issue a book, return a book, or even delete a book. 
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+I used Visual Studio Code as my text editor and terminal for this project. 
 
-{Describe the programming language that you used and any libraries.}
+This project uses Node.js for the backend, Express.js for the front end, CSS for the styling. 
 
 # Useful Websites
 
