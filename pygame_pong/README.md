@@ -9,7 +9,7 @@ I wrote this software to learn a little bit about game devlopment and to see how
 
 ## Demo
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Pong Demo](https://youtu.be/-2r8GXMiQOo)
 
 # Development Environment
 
